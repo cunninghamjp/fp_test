@@ -1,0 +1,35 @@
+Write shell command(s) or program(s) for each of the following scenarios:
+
+a. Returns only the rows that the first name argument matches
+#############################	
+Script:
+
+#!/bin/bash
+
+grep ^$1 <file>
+#############################
+
+b. Returns only the rows that the area code argument matches
+#############################
+Script:
+
+!/bin/bash
+
+grep ,$1 file.txt
+#############################
+c. Returns only the rows that match both a. and b.
+#############################
+Script:
+
+#!/bin/bash
+
+grep "$1.*$2" file.txt
+#############################
+d. Returns only the rows that match a or b (ensure no duplicates are printed)
+#############################
+Script:
+
+#!bin/bash
+
+egrep "$1|,$2" file.txt
+#############################
