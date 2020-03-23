@@ -1,3 +1,6 @@
+Hello, I figured a text file containing the required scripts would be easier so here it is. If you have any questions please let me know.
+
+
 Write shell command(s) or program(s) for each of the following scenarios:
 
 a. Returns only the rows that the first name argument matches
