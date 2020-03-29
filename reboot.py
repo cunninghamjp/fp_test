@@ -22,5 +22,5 @@ print(ec2_attributes[0]) # Prints: '{'AvailabilityZone': 'us-east-1a', 'GroupNam
 
 
 # '^web-server.*' to reboot all instances with web-server leading the name
-# 'us-east-[1-3]' to reboot anything in us-west
+# 'us-east-[1-3]' to reboot anything in us-east
 # '.*' to reboot all instances
