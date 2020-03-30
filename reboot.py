@@ -6,7 +6,8 @@ ec2 = session.resource('ec2', region_name='us-east-1')
 def instance_rebooter():
 
   # Regex in boto3 seems to be limited based on documentation I could find. '?' is a placeholder for any single character
-  # while '*' takes care of anything afterwards. Created an instance in my own AWS account named "Web-Server-blah" and the script worked.  
+  # while '*' takes care of anything afterwards. Created an instance in my own AWS account named "Web-Server-blah" and the script worked.
+  # confirmed by CloudTrail
     filters= [{'Name':'tag:Name','Values':['?eb-Server*']}] 
 
     instances = ec2.instances.filter(Filters=filters)
